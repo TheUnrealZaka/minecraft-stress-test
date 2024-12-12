@@ -18,7 +18,7 @@ jobs:
     - name: Build with Maven
       run: mvn -B package --file pom.xml
     - name: Upload Jar
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v3
       with:
         name: minecraft-stress-test.jar
         path: target/minecraft-stress-test-*-jar-with-dependencies.jar 
